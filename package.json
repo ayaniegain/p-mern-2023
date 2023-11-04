@@ -2,10 +2,10 @@
   "name": "ecom",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "scripts": {
-    "start": "node server.js",
-    "server": "nodemon server.js --prefix server",
+    "start": "node index.js",
+    "server": "nodemon index.js --prefix index",
     "client": "npm run dev --prefix client",
     "dev": "concurrently \"npm run start\" \"npm run client\""
   },
