@@ -29,6 +29,8 @@ app.use("/api/v1/category",categoryRoutes );
 app.use("/api/v1/product",productRoutes );
 app.use(express.static(path.join(__dirname, './client/build')) );
 //port
+const PORT = process.env.PORT || 8080;
+
 
 //rest api
 app.use('*',(req,res)=>{
