@@ -29,7 +29,7 @@ app.use("/api/v1/category",categoryRoutes );
 app.use("/api/v1/product",productRoutes );
 app.use(express.static(path.join(__dirname, './client/build')) );
 //port
-const PORT = process.env.PORT ;
+const PORT = process.env.PORT ||8080 ;
 
 
 //rest api
@@ -40,7 +40,7 @@ app.use('*',(req,res)=>{
 })
 
 //run listen
-app.listen(PORT, () => {
+app.listen(8080, () => {
   console.log(`listen PORT ${process.env.DEV_MODE} no ${PORT}`.bgYellow.bold);
 });
 
